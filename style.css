@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+        --s: 76px; /* control the size */
+      
+        --c: #1a144a;
+        --_g: conic-gradient(var(--c) 25%,#0000 0) 0 0;
+        background:
+          var(--_g)/calc(2*var(--s)) calc(var(--s)/9.5),
+          var(--_g)/calc(var(--s)/9.5) calc(2*var(--s)),
+          repeating-conic-gradient(#0000 0 25%,var(--c) 0 50%) 
+           var(--s) 0 /calc(2*var(--s)) calc(2*var(--s)),
+          radial-gradient(50% 50%,#2eb044 98%,var(--c)) 
+           0 0/var(--s) var(--s);
+}
+
+.title h1 {
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 2.9em;
+}
+
+.container{
+    width: 80%;
+    max-width: 1000px;
+    margin: 2em auto;
+    gap: 5em;
+}
+
+.uno{
+    padding: 5px 20px 5px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    
+}
+

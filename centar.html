@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro y Reducción de un Div</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="my-div bg-primary text-white text-center p-3">
+                        <h1>Laboratorio javascript</h1>
+                        <form  class="formulario grid text-center">
+                        <div class="g-col-4 g-start4">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="1er Nombre" required>
+                        </div>
+                        <div class="g-col-4 g-start-4" >
+                            <label for="dosNombre" class="form-label">Primer Nombre</label>
+                            <input type="text" class="form-control" id="dosNombre" placeholder="2do Nombre" >
+                        </div>
+                        <div class="g-col-4 g-start-4">
+                            <label for="Apellido" class="form-label">Primero de los Apellido</label>
+                            <input type="text" class="form-control" id="Apellido" placeholder="1er Apellido" required>
+                        </div>
+                        <div class="g-col-4 g-start-4">
+                            <label for="segApellido" class="form-label">Segundo Apellido</label>
+                            <input type="text" class="form-control" id="segApellido" placeholder="2do Apellido" required>
+                        </div>
+                        <div class="g-col-4 g-start-4">
+                            <label for="dni" class="form-label">DNI</label>
+                            <input type="number" class="form-control" id="dni" placeholder="DNI" required>
+                        </div>
+                        <div class="g-col-4 g-start-4">
+                            <label for="Fecha" class="form-label">Fecha de Cumpleaños</label>
+                            <input type="date" class="form-control" id="Fecha" placeholder="Nacimiento" required>
+                        </div>
+                        <button type="button" onclick="mostrar()" class="btn btn-primary" style="margin-top: 2%; background-color: black;">
+                            Procesar
+                        </button>
+                        <div class="g-col-4 g-start-4">
+                            <label for="Name" class="form-label">Nombre Completo</label>
+                            <p id="name" class="uno"></p>
+                        </div>
+                        <div class="g-col-4 g-start-4">
+                            <label for="ultimo" class="form-label">Ultimo digito del DNI</label>
+                            <p id="ultimo" class="uno"></p>
+                        </div>
+                        <div class="g-col-4 g-start-4">
+                            <label for="edad" class="form-label">Edad</label>
+                            <p id="edad" class="uno"></p>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlace a Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="funcion.js"></script>
+</body>
+</html>
